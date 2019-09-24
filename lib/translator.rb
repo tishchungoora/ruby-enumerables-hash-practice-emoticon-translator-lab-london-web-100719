@@ -25,14 +25,12 @@ def get_japanese_emoticon(file_path, emoticon)
   emoticon_pair = emoticons_by_lang[:get_emoticon]
   
   emoticon_pair.each_key do |eng_emoticon|
-    if emo
+    if !emoticon_pair.include?(eng_emoticon)
       message
     else
-      japanese_emoticon = emoticons_by_lang[:get_emoticon][emoticon]
+      japanese_emoticon = emoticon_pair[eng_emoticon]
     end
   end
-  
-  
   japanese_emoticon
 end
 
