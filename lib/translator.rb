@@ -23,6 +23,7 @@ def get_japanese_emoticon(file_path, eng_emoticon)
   emoticons_by_lang = load_library(file_path)
   message = "Sorry, your emoticon could not be found!"
   emoticon_pairs = emoticons_by_lang[:get_emoticon]
+  jap_emoticon = ""
   
   emoticon_pairs.each do |eng_emoticon, jap_emoticon|
       jap_emoticon = emoticon_pairs[eng_emoticon]
