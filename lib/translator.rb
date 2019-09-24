@@ -26,7 +26,9 @@ def get_japanese_emoticon(file_path, eng_emoticon)
   jap_emoticon = ""
   
   emoticon_pairs.each do |eng_emoticon, jap_emoticon|
+    if emoticon_pairs.include?(eng_emoticon)
       jap_emoticon = emoticon_pairs[eng_emoticon]
+    end
   end
   jap_emoticon
 end
