@@ -49,3 +49,7 @@ new_hash2 = {
   "bored" => ["C", "Charlie"]
 }
 
+new_hash2.each do |meaning, emoticons|
+    emoticons_by_lang[:get_meaning] = emoticons_by_lang[:get_meaning].merge({emoticons[1] => meaning})
+    emoticons_by_lang[:get_emoticon] = emoticons_by_lang[:get_emoticon].merge({emoticons[0] => emoticons[1]})
+  end
