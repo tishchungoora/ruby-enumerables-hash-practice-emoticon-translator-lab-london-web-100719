@@ -20,9 +20,11 @@ def load_library(file_path)
 end
 
 def get_japanese_emoticon(file_path, emoticon)
+  load_library(file_path)
   message = "Sorry, your emoticon could not be found!"
-  emoticons_by_lang = load_library(file_path)
   emoticon_pair = emoticons_by_lang[:get_emoticon]
+  
+
   
   emoticon_pair.each_key do |eng_emoticon|
     if !emoticon_pair.include?(eng_emoticon)
