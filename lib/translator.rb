@@ -26,7 +26,7 @@ def get_japanese_emoticon(file_path, eng_emoticon)
   # Assign a standard message to be returned if a Japanese equivalent for an English emoticon is not found
   message = "Sorry, that emoticon was not found"
   
-  # If the English emoticon exists as a key in the get_emoticon hash, return its value as the valid Japanese emoticon. Otherwise, return message
+  # If the English emoticon exists as a key in the get_emoticon hash, return its value as the valid Japanese emoticon. Otherwise, return the message
   emoticon_pairs = emoticons_by_lang[:get_emoticon]
   
   if emoticon_pairs.include?(eng_emoticon)
