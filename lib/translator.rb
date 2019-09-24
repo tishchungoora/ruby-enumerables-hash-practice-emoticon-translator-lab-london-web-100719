@@ -24,7 +24,7 @@ def get_japanese_emoticon(file_path, emoticon)
   emoticons_by_lang = load_library(file_path)
   emoticon_pair = emoticons_by_lang[:get_emoticon]
   
-  emoticon_pair.each_key do |eng_emoticon, jap_emoticon|
+  emoticon_pair.each_key do |eng_emoticon|
     if !emoticon_pair[eng_emoticon] ==emoticon)
       message
     else
