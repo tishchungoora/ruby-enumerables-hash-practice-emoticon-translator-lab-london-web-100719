@@ -24,8 +24,6 @@ def get_japanese_emoticon(file_path, emoticon)
   message = "Sorry, your emoticon could not be found!"
   emoticon_pair = emoticons_by_lang[:get_emoticon]
   
-
-  
   emoticon_pair.each_key do |eng_emoticon|
     if !emoticon_pair.include?(eng_emoticon)
       message
