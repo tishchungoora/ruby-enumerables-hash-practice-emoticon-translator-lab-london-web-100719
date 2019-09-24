@@ -51,15 +51,3 @@ def get_english_meaning(file_path, jap_emoticon)
     message
   end
 end
-
-new_hash2 = {
-  "angel" => ["O:)", "☜(⌒▽⌒)☞"],
-  "angry" => [">:(", "ヽ(ｏ`皿′ｏ)ﾉ"],
-  "bored" => [":O", "(ΘεΘ;)"]
-}
-
-new_hash2 = {
-  "angel" => ["A", "Alpha"],
-  "angry" => ["B", "Bravo"],
-  "bored" => ["C", "Charlie"]
-}
