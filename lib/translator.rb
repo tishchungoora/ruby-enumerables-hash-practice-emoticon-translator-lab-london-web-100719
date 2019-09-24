@@ -20,13 +20,13 @@ def load_library(file_path)
 end
 
 def get_japanese_emoticon(file_path, eng_emoticon)
-  # Call on load_library to be able to refer to get its returned result
+  # Call on load_library to be able to get its returned result
   emoticons_by_lang = load_library(file_path)
   
   # Assign a standard message to be returned if a Japanese equivalent for an English emoticon is not found
   message = "Sorry, that emoticon was not found"
   
-  # Define logic 
+  # If the English emoticon exists as a key in the get_emoticon hash, return its value as the valid Japanese emoticon. Otherwise, return message
   emoticon_pairs = emoticons_by_lang[:get_emoticon]
   
   if emoticon_pairs.include?(eng_emoticon)
