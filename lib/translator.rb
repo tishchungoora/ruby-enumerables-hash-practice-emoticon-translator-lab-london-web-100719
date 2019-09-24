@@ -20,7 +20,7 @@ def load_library(file_path)
 end
 
 def get_japanese_emoticon(file_path, emoticon)
-  load_library(file_path)
+  emoticons_by_lang = load_library(file_path)
   message = "Sorry, your emoticon could not be found!"
   emoticon_pair = emoticons_by_lang[:get_emoticon]
   
