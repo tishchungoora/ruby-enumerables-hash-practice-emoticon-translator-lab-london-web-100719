@@ -31,7 +31,6 @@ def get_japanese_emoticon(file_path, emoticon)
       japanese_emoticon = emoticon_pair[eng_emoticon]
     end
   end
-  japanese_emoticon
 end
 
 def get_english_meaning
