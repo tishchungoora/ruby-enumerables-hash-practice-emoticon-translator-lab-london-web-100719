@@ -30,7 +30,6 @@ def get_japanese_emoticon(file_path, eng_emoticon)
   else
     message
   end
-  #jap_emoticon
 end
 
 def get_english_meaning
